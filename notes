@@ -1,0 +1,57 @@
+ <div className="relative  ">
+       <Image 
+           layout="fill"
+           className="object-center object-cover pointer-events-none"
+           src={headerbg}
+           alt="header pic"
+           priority
+           
+       />
+       <div className="relative z-1">
+               <p>1</p>
+ 
+       </div>
+   </div>
+
+
+
+<div className="h-screen relative">
+    
+      <div className="absolute inset-0">
+        <Canvas className="" style={{ background: "#e0e0e2" }} orthographic camera={{ position: [0, 0, 200], zoom: 10 }}>
+          <Model mouse={smoothMouse}/>
+          <Environment preset="studio"/>
+        </Canvas>
+      </div>
+      <div className="absolute inset-0 flex justify-center items-center z-10  rounded">
+        <div className={`absolute inset-y-0 right-0 backdrop-blur-sm  bg-white/30   border border-l-4 w-1/3 transition-transform duration-300 ease-in-out transform ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+          <div className="text-black absolute ">
+            <p>The world of the Future and Artificial Intelligence today</p>
+                  
+          </div>
+        </div>
+        <div className="absolute inset-y-0 left-0 z-20 flex justify-center items-center w-3/5 p-10 mb-[50px] flex flex-column  ">
+          <div className="flex flex-column" style={{ flexDirection: 'column-reverse' }}>
+            <div className="flex flex-row gap-x-3">
+        
+            <button className="bg-gray-300 rounded-md px-4 py-2 mt-[70px] w-1/6">Button 1</button>
+            <button className="bg-gray-300 rounded-md px-4 py-2 mt-[70px] w-1/6">Button 1</button>
+            </div>
+         
+            <h2 className="pt-10">In our design studio, we bring your ideas to life. Specializes in the development</h2>
+            <h1 className="text-black text-[75px] mt-40 w-5/6 text-custom-gray leading-none">Designing the Digital World</h1>
+            
+            
+            <div className="flex backdrop-blur-sm rounded-xl  border   bg-white/30  p-3 md:mt-[-300px] lg:mt-[-700px] w-full justify-around">
+              <a href="#" className="text-black px-4 py-2 mx-2 rounded-md">About</a>
+              <a href="#" className="text-black  px-4 py-2 mx-2 rounded-md">Contact</a>
+              <a href="#" className="text-black  px-4 py-2 mx-2 rounded-md">Services</a>
+          
+              <a href="#" className="text-black  px-4 py-2 mx-2 rounded-md">Portfolio</a>
+             <button onClick={toggleOpen} className=" bg-custom-gray text-white px-2 py-1 rounded">Toggle</button>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
