@@ -32,6 +32,7 @@ import Project from '../components/Portfolio/Project'
 import {projects} from '../components/Portfolio/projectsData'
 import  styles from '../components/Portfolio/style.module.css'
 import Modal from '../components/Portfolio/Modal/Modal'
+import {TabsDemo} from '../components/Tabs/TabsUi'
   
 function Navbar({ className }: { className?: string }) {
   const [active, setActive] = useState<string | null>(null);
@@ -136,8 +137,12 @@ export default function Home() {
 <Modal modal={modal} projects={projects}/>
 
 </main>
+<div className="bg-black pt-1 pb-1">
+  <TabsDemo />
+</div>
 
-      <div className=" h-screen    mx-auto" style={{ background: "#000000" }}>
+
+      <div className=" h-screen  pb-10  mx-auto" style={{ background: "#000000" }}>
       <MacbookScroll
         title={
           <span>

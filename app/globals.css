@@ -29,3 +29,13 @@
   transform: scaleX(1);
   bottom: -4px; /* Adjust the space between the word and the line here */
 }
+
+.no-visible-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.no-visible-scrollbar::-webkit-scrollbar {
+  display: none;
+}
