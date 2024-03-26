@@ -6,10 +6,10 @@ export default function index({index, title, setModal}) {
 
     return (
         <div className="bg-black  ">
-            <div className="container mx-auto  ">
+            <div className="md:containerc mx-auto  ">
             <div onMouseEnter={() => {setModal({active: true, index})}} onMouseLeave={() => {setModal({active: false, index})}} className={styles.project}>
             <h2>{title}</h2>
-            <p>Design & Development</p>
+            <p className="sm:hidden md:block">Design & Development</p>
         </div>
         </div>
         </div>

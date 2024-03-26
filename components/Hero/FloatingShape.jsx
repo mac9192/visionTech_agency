@@ -36,7 +36,7 @@ export default function Index() {
 
   return (
     <div className="bg-black">
-      <div className="md:min-h-[500px] lg:min-h-[700px] rounded-xl rounded relative mx-auto container">
+      <div className="md:min-h-[500px] lg:min-h-[700px] sm:min-h-[700px] rounded-xl rounded md:relative mx-auto container">
         <div className="absolute inset-0 max-w-1/2 mt-10">
           <Canvas className="rounded-3xl z-2" style={{ background: "#21262D" }} orthographic camera={{ position: [0, 0, 200], zoom: 10 }}>
             <Model mouse={smoothMouse} />

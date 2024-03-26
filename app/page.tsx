@@ -33,6 +33,11 @@ import {projects} from '../components/Portfolio/projectsData'
 import  styles from '../components/Portfolio/style.module.css'
 import Modal from '../components/Portfolio/Modal/Modal'
 import {TabsDemo} from '../components/Tabs/TabsUi'
+import {BentoGridThirdDemo} from '../components/Bento/Bento'
+import {BentoGridDemo} from '../components/Bento/BentoTable'
+import {TracingBeamDemo} from '../components/Beam/Beam'
+import {BentoGridDemoOne} from '../components/BentoGrid/Bento'
+ 
   
 function Navbar({ className }: { className?: string }) {
   const [active, setActive] = useState<string | null>(null);
@@ -104,7 +109,7 @@ export default function Home() {
           <Navbar />
       <FloatingShape />
       <About />
-      <div className="h-[40rem]  flex flex-col antialiased bg-black dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+      <div className="h-[30rem]  flex flex-col antialiased bg-black dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
       <InfiniteMovingCards
         items={testimonials}
         direction="right"
@@ -112,11 +117,21 @@ export default function Home() {
       />
     </div>
    
+   <div className="bg-black">
+ 
+ 
+  
+     <BentoGridDemoOne />
+    
      
  
- <div className="pb-20 bg-black">
+   </div>
+    
+ 
+
+<div className="pb-20 bg-black">
        <Title />
-    </div>
+  
 
     <main className={styles.main}>
 
@@ -134,15 +149,19 @@ export default function Home() {
 
 </div>
 
-<Modal modal={modal} projects={projects}/>
 
-</main>
+<Modal modal={modal} projects={projects}/>
 <div className="bg-black pt-1 pb-1">
   <TabsDemo />
+</div> 
+
+</main>
 </div>
 
+{/*
 
-      <div className=" h-screen  pb-10  mx-auto" style={{ background: "#000000" }}>
+
+  <div className=" h-screen  pb-10  mx-auto" style={{ background: "#000000" }}>
       <MacbookScroll
         title={
           <span>
@@ -155,6 +174,10 @@ export default function Home() {
       />
 
       </div>
+
+
+*/}
+    
       
         </div>
           

@@ -49,18 +49,18 @@ const About = () => {
 
     return (
         <div className=" bg-black">
-            <div className="flex md:flex-row container pt-20  mx-auto w-full gap-x-20 pb-10">
-            <div className="text-white container mx-auto w-1/2  pt-7 border-custom-gray border-t-2 text-xl"> 
+            <div className="flex md:flex-row sm:flex-col md:container pt-20  mx-auto w-full gap-x-20 pb-10">
+            <div className="text-white md:container md:mx-auto md:w-full  pt-7 border-custom-gray border-t-2 text-xl"> 
             
-             <p>About Us</p>
-             <div className="flex flex-row items-center  pt-10 mb-10 w-full">
+             <p className="sm:text-center md:text-left">About Us</p>
+             <div className="flex flex-row  r mx-auto container text-center pt-10 mb-10 w-full">
       <AnimatedTooltip items={people} />
     </div>
              
-             <p className="pt-3 text-md text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut lorem ac neque convallis rutrum. Duis suscipit, ipsum eget lacinia placerat, magna justo elementum libero, at ullamcorper nunc velit id ligula. Aliquam erat volutpat. Integer eu tellus auctor, fermentum urna nec, consectetur ex. Vivamus suscipit sapien vel elit gravida, at interdum dui fringilla. In aliquet eleifend nunc, vel tempor purus fermentum nec. Sed vitae arcu id libero malesuada dictum.</p>
+             <p className="pt-3 text-md text-white sm:text-center md:text-left sm:p-10 md:p-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut lorem ac neque convallis rutrum. Duis suscipit, ipsum eget lacinia placerat, magna justo elementum libero, at ullamcorper nunc velit id ligula. Aliquam erat volutpat. Integer eu tellus auctor, fermentum urna nec, consectetur ex. Vivamus suscipit sapien vel elit gravida, at interdum dui fringilla. In aliquet eleifend nunc, vel tempor purus fermentum nec. Sed vitae arcu id libero malesuada dictum.</p>
             </div>
             
-            <div className="text-white container mx-auto    w-1/2 p-1"> 
+            <div className="text-white container mx-auto sm:hidden md:block   w-1/2 p-1"> 
                 <p className="p-12 bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 rounded-3xl min-h-full"></p>
             </div>
             </div>

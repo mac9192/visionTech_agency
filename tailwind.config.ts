@@ -42,12 +42,32 @@ const config: Config = {
     },
     extend: {
       backgroundImage: {
+        'hero': "url('/white1.png')",
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        'comp': "url('/assets/comp.jpg')",
+        'seo': "url('/assets/seo.jpg')",
+        'design': "url('/assets/design.jpg')",
+        'cms': "url('/assets/cms.png')",
+        'application': "url('/assets/application.jpg')",
+        'hosting': "url('/assets/hosting.jpg')",
+        'maintenance': "url('/assets/maintenance.jpg')",
+        'digital': "url('/assets/digital.jpg')",
+
+
+          
       },
       colors: {
         'custom-gray': '#21262D',
+        'gradient': 'linear-gradient(to right, #1e40af, #2563eb, #1e40af) 1'
+
+      },
+      borderWidth: {
+        '3': '3px',
+      },
+      borderImage: {
+        'gradient': 'linear-gradient(to right, #1e40af, #2563eb, #1e40af) 1',
       },
     },
   },
