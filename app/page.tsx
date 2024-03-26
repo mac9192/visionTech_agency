@@ -133,29 +133,9 @@ export default function Home() {
        <Title />
   
 
-    <main className={styles.main}>
-
-<div className={styles.body}>
-
-  {
-
-    projects.map( (project, index) => {
-
-      return <Project index={index} title={project.title} setModal={setModal} key={index}/>
-
-    })
-
-  }
-
-</div>
-
-
-<Modal modal={modal} projects={projects}/>
-<div className="bg-black pt-1 pb-1">
+    
   <TabsDemo />
-</div> 
 
-</main>
 </div>
 
 {/*

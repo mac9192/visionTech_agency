@@ -53,7 +53,7 @@ const About = () => {
             <div className="text-white md:container md:mx-auto md:w-full  pt-7 border-custom-gray border-t-2 text-xl"> 
             
              <p className="sm:text-center md:text-left">About Us</p>
-             <div className="flex flex-row  r mx-auto container text-center pt-10 mb-10 w-full">
+             <div className="flex flex-row    mx-auto container text-center pt-10 mb-10 w-full">
       <AnimatedTooltip items={people} />
     </div>
              

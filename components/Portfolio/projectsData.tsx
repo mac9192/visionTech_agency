@@ -2,7 +2,7 @@ export const projects = [
 
     {
   
-      title: "C2 Montreal",
+      title: "Briceno Law",
   
       src: "c2montreal.png",
   
@@ -12,7 +12,7 @@ export const projects = [
   
     {
   
-      title: "Office Studio",
+      title: "WhiteSpace",
   
       src: "officestudio.png",
   
@@ -22,7 +22,7 @@ export const projects = [
   
     {
   
-      title: "Locomotive",
+      title: "GenjutsuAtl",
   
       src: "locomotive.png",
   
@@ -30,14 +30,6 @@ export const projects = [
   
     },
   
-    {
   
-      title: "Silencio",
-  
-      src: "silencio.png",
-  
-      color: "#706D63"
-  
-    }
   
   ]

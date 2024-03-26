@@ -36,16 +36,16 @@ export default function Index() {
 
   return (
     <div className="bg-black">
-      <div className="md:min-h-[500px] lg:min-h-[700px] sm:min-h-[700px] rounded-xl rounded md:relative mx-auto container">
-        <div className="absolute inset-0 max-w-1/2 mt-10">
+      <div className="md:min-h-[500px] lg:min-h-[700px] sm:min-h-[800px] rounded-xl rounded md:relative md:mx-auto md:container">
+        <div className="md:block sm:hidden absolute inset-0 max-w-1/2 mt-10">
           <Canvas className="rounded-3xl z-2" style={{ background: "#21262D" }} orthographic camera={{ position: [0, 0, 200], zoom: 10 }}>
             <Model mouse={smoothMouse} />
             <Environment preset="studio" />
           </Canvas>
         </div>
-        <div className="absolute inset-x-0 bottom-0 p-12 lg:pb-[105px] rounded pt-[90px] backdrop-blur-sm bg-custom-gray/70">
-          <p className="text-[100px] pb-6 text-white">Bringing Your Vision</p>
-          <p className="text-8xl text-white">To Life</p>
+        <div className="md:absolute inset-x-0 bottom-0 p-12 lg:pb-[105px] rounded pt-[90px] backdrop-blur-sm bg-custom-gray/70">
+          <p className="md:text-[100px] pb-6 text-white sm:text-[70px]">Bringing Your Vision</p>
+          <p className="md:text-8xl text-white sm:text-[70px]">To Life</p>
           <p className="p-3 max-w-[600px] pt-10 text-white text-lg">We specialize in modern web development, branding, marketing, and custom applications to elevate your online presence and engage your audience</p>
           <div className="flex space-x-4 pt-6">
             <button className="p-[3px] relative">
